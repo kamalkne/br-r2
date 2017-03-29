@@ -11,6 +11,11 @@
 gulp command might give error if you do not have ruby installed in your system.
 (Ruby is needed since project uses sass)
 
+## Features on master branch -
+
+1. Only title field is editable
+2. Sorting on the basis of Date. [Click on table header - date (sort) in order to apply sorting]
+3. On successfull create or edit, alert message will be displayed!
 
 ## Note -
 
