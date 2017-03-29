@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Browserstack Todo</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="deploy/css/main.css">
+    </head>
+    <body>
+        <ul class="navigation">
+            <li onClick="app.switch(1)">Create</button>
+            <li onClick="app.switch(2)">List</button>
+        </ul>
+        <div id="create-screen" class="screen create-screen">
+            <h3>Create Tasks</h3>
+            <p><input placeholder="Title" type="text" id="tit" value=""></p>
+            <p><input placeholder="Description" type="text" id="desc" value=""></p>
+            <p><input placeholder="Assignee" type="text" id="asg" value=""></p>
+            <p><input placeholder="Due Date" type="date" id="dud" value=""></p>
+            <p><input placeholder="Status" type="text" id="sts" value=""></p>
+            <p><input placeholder="Priority" type="text" id="pri" value=""></p>
+            <div><button class="btn" onClick="app.createTask()" type="button">Create</button></div>
+        </div>
+        <div id="list-screen" class="screen list-screen">
+            <h3>List Tasks</h3>
+            <table id="tasks-table">
+                <thead>
+                    <tr>
+                        <td>Title</td>
+                        <td onClick="app.sort('title')">Date (Sort)</td>
+                        <td>Priori</td>
+                        <td>Assignee</td>
+                        <td>Edit</td>
+                    </tr>
+                </thead>
+                <tbody id="tasks-body"></tbody>
+            </table>
+        </div>
+        <script type="text/javascript" src="deploy/js/main.js"></script>
+    </body>
+</html>

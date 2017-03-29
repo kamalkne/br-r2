@@ -1,0 +1,16 @@
+Task Manager - 3 hrs
+    - No Angular/React or any other JS framework (You CAN use jQuery, jQuery UI lib)
+    - Modular code
+    - Should work cross browser
+   
+    Features :-
+     - Store tasks in local storage (No server side storage required)
+     - Due Date
+     - Status - Development / Testing / Rejected
+     - Priority - P1 - P4
+     - Created At
+     - Mark as complete / Delete
+
+     - Sort / Filter (Not compulsory but try doing this)
+     - Export / Import notes (Not compulsory)
+     - Basic formatting (Bold, Italic, Underline) - (Not compulsory)
