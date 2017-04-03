@@ -27,19 +27,20 @@
         app.populateRow({blank: true});
         for (let item in localStorage) {
             if (localStorage.hasOwnProperty(item)) {
-                let i = JSON.parse(localStorage.getItem(item));
-                if (i.tit) {
-                    i.id = item;
-                    app.tasks.push(i);
-                    // app.populateRow(i, item);
-                    app.populateRow({item: i, count: item});
+                if (item.startsWith('t-')) {
+                    let i = JSON.parse(localStorage.getItem(item));
+                    if (i.tit) {
+                        i.id = item;
+                        app.tasks.push(i);
+                        // app.populateRow(i, item);
+                        app.populateRow({item: i, count: item});
+                    }
                 }
             }
         }
     };
 
     app.editTask = function(e) {
-        debugger;
         console.log(e.dataset.item);
         var a = document.getElementById(e.dataset.item);
         let l = JSON.parse(localStorage.getItem(e.dataset.item));
