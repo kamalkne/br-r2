@@ -55,11 +55,24 @@ body {
     margin: 35px;
 }
 
-input[type='text'] {
+.create-screen {
+    margin: 0 auto;
+    width: 300px;
+}
+
+input[type='text'],
+input[type='date'] {
     border: 1px solid $tbox-color-1;
     border-radius: 5px;
     font-size: $font-lg;
     height: 40px;
     padding: 15px;
     width: 180px;
+}
+
+select {
+    border-radius: 5px;
+    height: 50px;
+    padding: 15px;
+    width: 215px;
 }

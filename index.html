@@ -17,7 +17,15 @@
             <p><input placeholder="Assignee" type="text" id="asg" value=""></p>
             <p><input placeholder="Due Date" type="date" id="dud" value=""></p>
             <p><input placeholder="Status" type="text" id="sts" value=""></p>
-            <p><input placeholder="Priority" type="text" id="pri" value=""></p>
+<!--            <p><input placeholder="Priority" type="text" id="pri" value=""></p>-->
+            <p>
+                <select id="pri">
+                    <option value="P1">Priority P1</option>
+                    <option value="P2">Priority P2</option>
+                    <option value="P3">Priority P3</option>
+                    <option value="P4">Priority P4</option>
+                </select>
+            </p>
             <div><button class="btn" onClick="app.createTask()" type="button">Create</button></div>
         </div>
         <div id="list-screen" class="screen list-screen">
