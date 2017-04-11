@@ -24,4 +24,4 @@ gulp command might give error if you do not have ruby installed in your system.
 
 Hence recommended browser is Google Chrome
 
-(Added this line to trigger CI of CodeShip)
+(Added this line to trigger CI of CodeShip.)
