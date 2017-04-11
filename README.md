@@ -23,3 +23,5 @@ gulp command might give error if you do not have ruby installed in your system.
 2. Some funcions like registedElement are still not supported by some browsers like firefox.
 
 Hence recommended browser is Google Chrome
+
+(Adding this line to trigger CI of CodeShip)
